@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    margin: auto;
+    padding: 4vh 0vh;
+}
+
+.container .box{
+    height: 78vh;
+    width: 50vh;
+    box-shadow: 0px 0px 8px 0px rgb(63, 58, 193);
+    margin: auto;
+    padding-top: 2em;
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+
+h3{
+    color: white;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    text-shadow: 0px 0px 20px rgb(63, 58, 193);
+    animation: mySlide;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+input{
+    padding: 8px 12px;
+    width: 45vh;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 1em;
+    background: transparent;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+@keyframes mySlide{
+    from{
+        text-shadow: 0px 0px 20px rgb(63, 58, 193);
+        color: white; 
+    }
+
+    to{
+        text-shadow: 0px 0px 5px silver;
+        font-weight: none
+        ;
+    }
+}
+
+select{
+    padding: 8px 12px;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+option{
+    background: black;
+    justify-content: space-between;
+}
+
+#number{
+    width: 24vh;
+    margin-left:0.5em;
+    font-size: 16px;
+}
+
+#create_account{
+    padding: 8px 12px;
+    font-size: 18px;
+    width: 45vh;
+    color: white;
+    background: rgb(63, 58, 193);
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+hr{
+    width: 45vh;
+    background: rgb(63, 58, 193);
+    margin-bottom: 1em;
+}
+
+
+#login{
+    padding: 8px 12px;
+    width: 40vh;
+    margin-left: 1em;
+    font-size: 18px;
+    color: white;
+    background: rgb(63, 58, 193);
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    background: rgb(9, 9, 22);
+    height: 13vh;
+    padding-top: 0.5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: myCookie;
+    animation-duration: 2s;
+    writing-mode: sideways-lr;
+}
+
+#cookies_btn{
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: rgb(63, 58, 193);
+    color: white;
+    font-size: 17px;
+    width: 50vh;
+    margin-bottom: 0.2em;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+@keyframes myCookie{
+    from{
+        height: 0;
+    }
+
+    to{
+        height: 13vh;
+    }
+}
+
+
+
+h5{
+    color: white;
+    font-size: 16px ;
+}
+
+/* Responsive for phone and tablet */
+
+@media only screen and (max-width:500px){
+
+    
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    margin: auto;
+    padding: 3vh 0vh;
+}
+
+.container .box{
+    height: 74vh;
+    width: 40vh;
+    box-shadow: 0px 0px 8px 0px rgb(63, 58, 193);
+    margin: auto;
+    padding-top: 2em;
+    padding-left: 1em;
+    margin-bottom: 3em;
+}
+
+input{
+    padding: 8px 12px;
+    width: 36vh;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 1em;
+    background: transparent;
+    color: white;
+}
+
+
+
+select{
+    padding: 8px 12px;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+option{
+    background: black;
+    justify-content: space-between;
+}
+
+#number{
+    width: 24vh;
+    margin-left:0.1em;
+    font-size: 16px;
+    margin-bottom: 1.5em;
+}
+
+
+#create_account{
+    padding: 8px 12px;
+    font-size: 18px;
+    width: 37vh;
+    color: white;
+    background: rgb(63, 58, 193);
+    cursor: pointer;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    height: 6vh;
+}
+
+hr{
+    width: 37vh;
+    background: rgb(63, 58, 193);
+    margin-bottom: 1em;
+}
+
+#login{
+    padding: 8px 12px;
+    width: 37vh;
+    margin-left: -0.2em;
+    font-size: 18px;
+    color: white;
+    background: rgb(63, 58, 193);
+    cursor: pointer;
+    border-radius: 10px;
+    height: 6vh;
+}
+
+#cookies_btn{
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: rgb(63, 58, 193);
+    color: white;
+    font-size: 15px;
+    width: 40vh;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+@keyframes myCookie{
+    from{
+        height: 0;
+    }
+
+    to{
+        height: 13vh;
+    }
+}
+
+footer{
+    width: 100%;
+    background: rgb(9, 9, 22);
+    height: 17vh;
+    padding-top: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: myCookie;  
+}
+
+}
